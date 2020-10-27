@@ -1,6 +1,6 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
+    author: "@kimcoding",
     siteTitle: "Programming Contest",
     siteShortTitle: "CCPC 2020", // Used as logo text in header, footer, and splash screen
     siteDescription: "About CCPC",
