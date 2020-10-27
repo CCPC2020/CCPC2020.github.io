@@ -5,9 +5,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/sections/hero"
-import Articles from "../components/sections/articles" 
 import About from "../components/sections/about"
-import Interests from "../components/sections/interests"
+import LeftAbout from "../components/sections/leftAbout"
 import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
 import { splashScreen } from "../config"
@@ -21,6 +20,9 @@ const IndexPage = ({ data }) => (
     <About content={data.about.edges} />
     {/*<Interests content={data.interests.edges} />*/}
     <Projects content={data.projects.edges} />
+    <LeftAbout content={data.leftAbout.edges} />
+    <About content={data.contest.edges} />
+    <LeftAbout content={data.judge.edges} />
     <Contact content={data.contact.edges} />
   </Layout>
 )
@@ -54,6 +56,57 @@ export const pageQuery = graphql`
     }
   }
   about: allMdx(filter: {fileAbsolutePath: {regex: "/about/"}}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  leftAbout: allMdx(filter: {fileAbsolutePath: {regex: "/leftAbout/"}}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  contest: allMdx(filter: {fileAbsolutePath: {regex: "/contest/"}}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  judge: allMdx(filter: {fileAbsolutePath: {regex: "/judge/"}}) {
     edges {
       node {
         body

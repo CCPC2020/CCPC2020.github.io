@@ -39,8 +39,12 @@ module.exports = {
                 url: "/#about",
             },
             {
-                name: "Schedule",
-                url: "/#projects",
+                name: "Info",
+                url: "/#info",
+            },
+            {
+                name: "Etc",
+                url: "/#etc",
             },
         ],
         button: {

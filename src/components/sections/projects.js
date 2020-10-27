@@ -250,7 +250,7 @@ const Projects = ({ content }) => {
   }
 
   return (
-    <StyledSection id="projects">
+    <StyledSection id="info">
       <StyledContentWrapper>
         <motion.div
           ref={tRef}
