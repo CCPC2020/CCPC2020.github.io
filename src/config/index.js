@@ -23,6 +23,10 @@ module.exports = {
             url: "https://www.acmicpc.net/"
         },
         {
+            name: "Startlink",
+            url : "https://startlink.io"
+        },
+        {
             name: "Github",
             url: "https://github.com/CCPC2020/"
         },
