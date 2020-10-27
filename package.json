@@ -58,7 +58,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/CCPC2020/CCPC2020.github.io"
+    "deploy": "gatsby build && gh-pages -d public -b release -r https://github.com/CCPC2020/CCPC2020.github.io"
   },
   "repository": {
     "type": "git",
