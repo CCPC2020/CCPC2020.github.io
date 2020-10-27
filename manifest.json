@@ -1,4 +1,6 @@
 {
   "main.js": "render-page.js",
-  "main.js.map": "render-page.js.map"
+  "main.js.map": "render-page.js.map",
+  "static/footer_alcuk.png": "static/footer_alcuk-36554ad387c8788759bfa68455dfcd84.png",
+  "static/startlink-logo-white.png": "static/startlink-logo-white-409a1e6936076295b56681c1554e7a6f.png"
 }
